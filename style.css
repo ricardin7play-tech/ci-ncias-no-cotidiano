@@ -1,0 +1,31 @@
+*{box-sizing:border-box}
+body{font-family:Arial, sans-serif;margin:0;background:#f4f6f8;color:#222}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+
+.site-header{background:#0b6efd;color:#fff;padding:1rem}
+.site-header nav{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px}
+.nav-btn{background:transparent;border:1px solid #fff;color:#fff;padding:.4rem .7rem;border-radius:6px;cursor:pointer}
+.nav-btn.active{background:#fff;color:#0b6efd}
+
+.page{display:none}
+.page.active{display:block}
+
+.card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 3px 6px rgba(0,0,0,0.1)}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.highlight-cards{display:flex;gap:1rem;flex-wrap:wrap}
+
+.accordion .item{margin-bottom:6px}
+.acc-btn{width:100%;text-align:left;padding:.6rem;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+.acc-panel{display:none;padding:.6rem;border:1px solid #ddd;border-top:0;background:#fafafa}
+
+.tabs{display:flex;gap:.5rem;margin:1rem 0}
+.tab-btn{padding:.4rem .7rem;border:1px solid #ccc;border-radius:6px;background:#fff;cursor:pointer}
+.tab-btn.active{background:#0b6efd;color:#fff}
+.tab-content{background:#fff;padding:1rem;border-radius:6px;margin-top:.5rem}
+.hidden{display:none}
+
+.btn{padding:.4rem .7rem;border-radius:6px;border:0;background:#0b6efd;color:#fff;cursor:pointer}
+.result{margin-top:.5rem}
+
+.site-footer{text-align:center;padding:1rem;color:#666}
+.gallery-thumb{width:100%;height:150px;object-fit:cover;border-radius:6px}

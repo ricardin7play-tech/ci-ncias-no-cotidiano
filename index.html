@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ciência no Cotidiano — Escola</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Ciência no Cotidiano</h1>
+      <p class="tagline">Experimentos, curiosidades e projetos para a escola</p>
+      <nav>
+        <button data-target="home" class="nav-btn active">Início</button>
+        <button data-target="experimentos" class="nav-btn">Experimentos</button>
+        <button data-target="curiosidades" class="nav-btn">Curiosidades</button>
+        <button data-target="corpo" class="nav-btn">Corpo Humano</button>
+        <button data-target="sustentabilidade" class="nav-btn">Sustentabilidade</button>
+        <button data-target="interativo" class="nav-btn">Interativo</button>
+        <button data-target="galeria" class="nav-btn">Galeria</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Home -->
+    <section id="home" class="page active">
+      <h2>Bem-vindos!</h2>
+      <p>Este site foi criado para apoiar atividades escolares com conteúdos de ciência fáceis de entender e práticos. Escolha uma seção no menu para explorar.</p>
+      <div class="highlight-cards">
+        <article class="card">
+          <h3>Experimentos</h3>
+          <p>Passo a passo de experimentos simples para fazer na escola.</p>
+        </article>
+        <article class="card">
+          <h3>Quizzes</h3>
+          <p>Teste o conhecimento com perguntas interativas.</p>
+        </article>
+        <article class="card">
+          <h3>Projetos</h3>
+          <p>Ideias de projetos de sustentabilidade e atividades em grupo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experimentos -->
+    <section id="experimentos" class="page">
+      <h2>Experimentos Fáceis</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Vulcão de bicarbonato</h3>
+          <p>Reação ácido-base libera gás carbônico e simula um vulcão.</p>
+        </article>
+        <article class="card">
+          <h3>Arco-íris no copo</h3>
+          <p>Líquidos de densidades diferentes se organizam em camadas.</p>
+        </article>
+        <article class="card">
+          <h3>Lâmpada de batata</h3>
+          <p>Reação química gera eletricidade suficiente para acender um LED.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades" class="page">
+      <h2>Curiosidades Científicas</h2>
+      <div class="accordion">
+        <div class="item">
+          <button class="acc-btn">Por que o céu é azul?</button>
+          <div class="acc-panel">Porque a luz azul se espalha mais na atmosfera.</div>
+        </div>
+        <div class="item">
+          <button class="acc-btn">Como funciona o micro-ondas?</button>
+          <div class="acc-panel">Ele agita moléculas de água nos alimentos, aquecendo-os.</div>
+        </div>
+        <div class="item">
+          <button class="acc-btn">Por que sentimos frio após sair da piscina?</button>
+          <div class="acc-panel">A evaporação da água retira calor da pele.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corpo Humano -->
+    <section id="corpo" class="page">
+      <h2>Corpo Humano</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="digestivo">Digestivo</button>
+        <button class="tab-btn" data-tab="respiratorio">Respiratório</button>
+        <button class="tab-btn" data-tab="nervoso">Nervoso</button>
+      </div>
+      <div class="tab-content" id="digestivo">
+        <p>Transforma alimentos em nutrientes para o corpo.</p>
+      </div>
+      <div class="tab-content hidden" id="respiratorio">
+        <p>Faz a troca de oxigênio e gás carbônico.</p>
+      </div>
+      <div class="tab-content hidden" id="nervoso">
+        <p>Controla funções do corpo e transmite informações.</p>
+      </div>
+    </section>
+
+    <!-- Sustentabilidade -->
+    <section id="sustentabilidade" class="page">
+      <h2>Sustentabilidade</h2>
+      <ul>
+        <li>Separar lixo em reciclável e orgânico.</li>
+        <li>Economizar água e energia.</li>
+        <li>Criar hortas escolares.</li>
+      </ul>
+    </section>
+
+    <!-- Interativo -->
+    <section id="interativo" class="page">
+      <h2>Quiz de Ciências</h2>
+      <div id="quiz-question"></div>
+      <div id="quiz-choices"></div>
+      <button id="next-question" class="btn">Próxima</button>
+      <div id="quiz-result" class="result"></div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria" class="page">
+      <h2>Galeria</h2>
+      <input type="file" id="gallery-upload" accept="image/*" multiple>
+      <div id="gallery-grid" class="cards-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Projeto Escolar de Ciências</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
